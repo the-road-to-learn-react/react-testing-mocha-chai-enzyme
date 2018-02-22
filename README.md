@@ -1,8 +1,10 @@
-# minimal-react-webpack-babel-setup
+# react-components-test-setup
 
-[![Build Status](https://travis-ci.org/rwieruch/minimal-react-webpack-babel-setup.svg?branch=master)](https://travis-ci.org/rwieruch/minimal-react-webpack-babel-setup)
+[![Build Status](https://travis-ci.org/rwieruch/react-components-test-setup.svg?branch=master)](https://travis-ci.org/rwieruch/react-components-test-setup)
 
-Read more about it: [The Minimal React Webpack Babel Setup](https://www.robinwieruch.de/minimal-react-webpack-babel-setup/)
+A solid test setup for React components with Mocha, Chai, Sinon, Enzyme and Jest in a [Webpack/Babel/React](https://github.com/rwieruch/minimal-react-webpack-babel-setup) application.
+
+Read more about it: [Coming Soon](https://www.robinwieruch.de/react-components-test-setup/)
 
 ## Features
 
@@ -11,11 +13,17 @@ Read more about it: [The Minimal React Webpack Babel Setup](https://www.robinwie
 * Babel
 * Staging ES Next Features
 * Hot Module Replacement
+* Mocha/Chai
+* Enzyme
+* Sinon
+* Jest
+* Unit/Integratio Test (Chai, Enzyme) Watcher
+* Snapshot Test (Jest) Watcher
 
 ## Installation
 
-* `git clone git@github.com:rwieruch/minimal-react-webpack-babel-setup.git`
-* cd minimal-react-webpack-babel-setup
+* `git clone git@github.com:rwieruch/react-components-test-setup.git`
+* cd react-components-test-setup
 * npm install
 * npm start
 * visit `http://localhost:8080/`
