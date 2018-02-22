@@ -18,7 +18,7 @@ describe('Business Logic', () => {
   });
 });
 
-describe('App', () => {
+describe('App Unit & Integration', () => {
   let result = [3, 5, 9];
   let promise = new Promise((resolve) => resolve(result));
 
