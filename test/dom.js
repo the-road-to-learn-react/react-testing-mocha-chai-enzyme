@@ -1,7 +1,6 @@
-const { JSDOM } = require('jsdom');
+import { JSDOM } from 'jsdom';
 
-const jsdom = new JSDOM('<!doctype html><html><body></body></html>');
-const { window } = jsdom;
+const { window } = new JSDOM('<!doctype html><html><body></body></html>');
 
 function copyProps(src, target) {
   const props = Object.getOwnPropertyNames(src)
