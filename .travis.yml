@@ -7,4 +7,4 @@ install:
   - npm install
 
 script:
-  - npm test
+  - npm run test:unit && npm run test:snapshot
