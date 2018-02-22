@@ -1,5 +1,5 @@
 import React from 'react';
-// import axios from 'axios';
+import axios from 'axios';
 import App, { doIncrement, doDecrement, Counter } from './App';
 
 describe('Business Logic', () => {
@@ -22,20 +22,20 @@ describe('App', () => {
   let result = [3, 5, 9];
   let promise = new Promise((resolve) => resolve(result));
 
-  // before(() => {
-  //   sinon.stub(axios, 'get').withArgs('http://mydomain/counter').returns(promise);
-  // });
+  before(() => {
+    sinon.stub(axios, 'get').withArgs('http://mydomain/counter').returns(promise);
+  });
 
-  // after(() => {
-  //   axios.get.restore();
-  // });
+  after(() => {
+    axios.get.restore();
+  });
 
   it('renders the Counter wrapper', () => {
     const wrapper = shallow(<App />);
     expect(wrapper.find(Counter)).to.have.length(1);
   });
 
-  it('passes all props to its child wrapper', () => {
+  it('passes all props to Counter wrapper', () => {
     const wrapper = shallow(<App />);
     let counterWrapper = wrapper.find(Counter);
 
@@ -65,20 +65,20 @@ describe('App', () => {
     expect(wrapper.state().counter).to.equal(-1);
   });
 
-  // it('calls render', () => {
-  //   sinon.spy(App.prototype, 'render');
+  it('calls render', () => {
+    sinon.spy(App.prototype, 'render');
 
-  //   const wrapper = mount(<App />);
-  //   expect(App.prototype.render.calledOnce).to.equal(true);
-  // });
+    const wrapper = mount(<App />);
+    expect(App.prototype.render.calledOnce).to.equal(true);
+  });
 
-  // it('fetches an async counter', () => {
-  //   const wrapper = shallow(<App />);
+  it('fetches an async counter', () => {
+    const wrapper = shallow(<App />);
 
-  //   expect(wrapper.state().asyncCounter).to.equal(null);
+    expect(wrapper.state().asyncCounter).to.equal(null);
 
-  //   return promise.then(() => {
-  //     expect(wrapper.state().asyncCounter).to.equal(result);
-  //   });
-  // });
+    return promise.then(() => {
+      expect(wrapper.state().asyncCounter).to.equal(result);
+    });
+  });
 });
