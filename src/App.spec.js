@@ -2,7 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import App, { doIncrement, doDecrement, Counter } from './App';
 
-describe('Business Logic', () => {
+describe('App: Local State', () => {
   it('should increment the counter in state', () => {
     const state = { counter: 0 };
     const newState = doIncrement(state);
@@ -18,9 +18,9 @@ describe('Business Logic', () => {
   });
 });
 
-describe('App Unit & Integration', () => {
+describe('App Component: Unit & Integration', () => {
   let result = [3, 5, 9];
-  let promise = new Promise((resolve) => resolve(result));
+  let promise = Promise.resolve(result);
 
   before(() => {
     sinon.stub(axios, 'get').withArgs('http://mydomain/counter').returns(promise);

@@ -43,8 +43,19 @@ class App extends Component {
       <div>
         <Counter counter={counter} />
 
-        <button type="button" onClick={this.onIncrement}>Increment</button>
-        <button type="button" onClick={this.onDecrement}>Decrement</button>
+        <button
+          type="button"
+          onClick={this.onIncrement}
+        >
+          Increment
+        </button>
+
+        <button
+          type="button"
+          onClick={this.onDecrement}
+        >
+          Decrement
+        </button>
       </div>
     );
   }
