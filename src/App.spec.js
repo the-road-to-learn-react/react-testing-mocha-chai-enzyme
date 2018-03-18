@@ -2,7 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import App, { doIncrement, doDecrement, Counter } from './App';
 
-describe('App: Local State', () => {
+describe('Local State', () => {
   it('should increment the counter in state', () => {
     const state = { counter: 0 };
     const newState = doIncrement(state);
@@ -18,9 +18,9 @@ describe('App: Local State', () => {
   });
 });
 
-describe('App Component: Unit & Integration', () => {
-  let result = [3, 5, 9];
-  let promise = Promise.resolve(result);
+describe('App Component', () => {
+  const result = [3, 5, 9];
+  const promise = Promise.resolve(result);
 
   before(() => {
     sinon.stub(axios, 'get').withArgs('http://mydomain/counter').returns(promise);
@@ -65,20 +65,20 @@ describe('App Component: Unit & Integration', () => {
     expect(wrapper.state().counter).to.equal(-1);
   });
 
-  it('calls render', () => {
-    sinon.spy(App.prototype, 'render');
+  it('calls componentDidMount', () => {
+    sinon.spy(App.prototype, 'componentDidMount');
 
     const wrapper = mount(<App />);
-    expect(App.prototype.render.calledOnce).to.equal(true);
+    expect(App.prototype.componentDidMount.calledOnce).to.equal(true);
   });
 
-  it('fetches an async counter', () => {
+  it('fetches async counters', () => {
     const wrapper = shallow(<App />);
 
-    expect(wrapper.state().asyncCounter).to.equal(null);
+    expect(wrapper.state().asyncCounters).to.equal(null);
 
-    return promise.then(() => {
-      expect(wrapper.state().asyncCounter).to.equal(result);
+    promise.then(() => {
+      expect(wrapper.state().asyncCounters).to.equal(result);
     });
   });
 });
