@@ -4,7 +4,7 @@
 
 A solid test setup for React components with Mocha, Chai, Sinon, Enzyme and Jest in a [Webpack/Babel/React](https://github.com/rwieruch/minimal-react-webpack-babel-setup) application.
 
-Read more about it: [Coming Soon](https://www.robinwieruch.de/react-components-test-setup/)
+Read more about it: [React Testing Tutorial: Test Frameworks & Component Tests](https://www.robinwieruch.de/react-testing-tutorial/)
 
 ## Features
 
@@ -13,7 +13,8 @@ Read more about it: [Coming Soon](https://www.robinwieruch.de/react-components-t
 * Babel
 * Staging ES Next Features
 * Hot Module Replacement
-* Mocha/Chai
+* Mocha
+* Chai
 * Enzyme
 * Sinon
 * Jest
