@@ -13,13 +13,16 @@ Read more about it: [React Testing Tutorial: Test Frameworks & Component Tests](
 * Babel
 * Staging ES Next Features
 * Hot Module Replacement
-* Mocha
-* Chai
-* Enzyme
-* Sinon
-* Jest
-* Unit/Integratio Test (Chai, Enzyme) Watcher
-* Snapshot Test (Jest) Watcher
+* Testing
+  * Mocha
+  * Chai
+  * Enzyme
+  * Sinon
+  * Jest
+  * Unit/Integratio Test (Chai, Enzyme) Watcher
+  * Snapshot Test (Jest) Watcher
+  * Travis CI
+  * Coveralls.io
 
 ## Installation
 
