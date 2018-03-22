@@ -2,6 +2,9 @@
 
 exports[`App Snapshot renders 1`] = `
 <div>
+  <h1>
+    My Counter
+  </h1>
   <p>
     0
   </p>
