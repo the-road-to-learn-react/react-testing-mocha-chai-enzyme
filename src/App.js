@@ -41,6 +41,7 @@ class App extends Component {
 
     return (
       <div>
+        <h1>My Counter</h1>
         <Counter counter={counter} />
 
         <button

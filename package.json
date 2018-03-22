@@ -9,6 +9,8 @@
     "test:unit:watch": "npm run test:unit -- --watch",
     "test:snapshot": "jest --config ./test/jest.config.json",
     "test:snapshot:watch": "npm run test:snapshot -- --watch",
+    "test:cypress": "start-server-and-test start http://localhost:8080 cypress",
+    "cypress": "cypress run",
     "coveralls": "cat ./coverage/lcov.info | node node_modules/.bin/coveralls"
   },
   "keywords": [],
@@ -21,6 +23,7 @@
     "babel-preset-stage-2": "^6.24.1",
     "chai": "^4.1.2",
     "coveralls": "^3.0.0",
+    "cypress": "^2.1.0",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "ignore-styles": "^5.0.1",
@@ -30,6 +33,7 @@
     "react-hot-loader": "^4.0.0",
     "react-test-renderer": "^16.2.0",
     "sinon": "^4.4.6",
+    "start-server-and-test": "^1.1.0",
     "webpack": "^4.1.1",
     "webpack-cli": "^2.0.12",
     "webpack-dev-server": "^3.1.1"
