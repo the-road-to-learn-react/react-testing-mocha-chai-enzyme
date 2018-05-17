@@ -9,7 +9,7 @@ Read more about it: [React Testing Tutorial: Test Frameworks & Component Tests](
 ## Features
 
 * React 16
-* Webpack 3
+* Webpack 4
 * Babel
 * Staging ES Next Features
 * Hot Module Replacement
