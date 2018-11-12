@@ -19,7 +19,7 @@ Read more about it: [React Testing Tutorial: Test Frameworks & Component Tests](
   * Enzyme
   * Sinon
   * Jest
-  * Unit/Integratio Test (Chai, Enzyme) Watcher
+  * Unit/Integration Test (Chai, Enzyme) Watcher
   * Snapshot Test (Jest) Watcher
   * Travis CI
   * Coveralls.io
