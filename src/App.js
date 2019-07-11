@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
-export const doIncrement = (prevState) => ({
+export const doIncrement = prevState => ({
   counter: prevState.counter + 1,
 });
 
-export const doDecrement = (prevState) => ({
+export const doDecrement = prevState => ({
   counter: prevState.counter - 1,
 });
 
@@ -23,7 +23,8 @@ class App extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://mydomain/counter')
+    axios
+      .get('http://mydomain/counter')
       .then(counter => this.setState({ asyncCounters: counter }))
       .catch(error => console.log(error));
   }
@@ -44,17 +45,11 @@ class App extends Component {
         <h1>My Counter</h1>
         <Counter counter={counter} />
 
-        <button
-          type="button"
-          onClick={this.onIncrement}
-        >
+        <button type="button" onClick={this.onIncrement}>
           Increment
         </button>
 
-        <button
-          type="button"
-          onClick={this.onDecrement}
-        >
+        <button type="button" onClick={this.onDecrement}>
           Decrement
         </button>
       </div>
@@ -62,7 +57,6 @@ class App extends Component {
   }
 }
 
-export const Counter = ({ counter }) =>
-  <p>{counter}</p>
+export const Counter = ({ counter }) => <p>{counter}</p>;
 
 export default App;
