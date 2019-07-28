@@ -6,9 +6,11 @@ A test setup for React components with Mocha, Chai and Enzyme in a [React + Webp
 
 **Optional:**
 
-* [Cypress Tutorial](https://www.robinwieruch.de/react-testing-cypress/)
-* [CI Tutorial](https://www.robinwieruch.de/javascript-continuous-integration/)
-* [Test Coverage Tutorial](https://www.robinwieruch.de/javascript-test-coverage/)
+- [Cypress Tutorial](https://www.robinwieruch.de/react-testing-cypress/)
+- [CI Tutorial](https://www.robinwieruch.de/javascript-continuous-integration/)
+- [Test Coverage Tutorial](https://www.robinwieruch.de/javascript-test-coverage/)
+
+**Recommended alternative: Instead of Mocha/Chai, [using Jest as test runner and assertion library](https://github.com/the-road-to-learn-react/react-testing-jest-enzyme/).**
 
 ## Features
 
@@ -28,4 +30,3 @@ A test setup for React components with Mocha, Chai and Enzyme in a [React + Webp
 - npm start
 - visit `http://localhost:8080/`
 - npm test
-

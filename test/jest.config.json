@@ -1,4 +1,0 @@
-{
-  "testRegex": "((\\.|/*.)(snapshot))\\.js?$",
-  "rootDir": ".."
-}
