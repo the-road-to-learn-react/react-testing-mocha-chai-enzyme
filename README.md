@@ -1,6 +1,6 @@
-# react-components-test-setup
+# react-testing-mocha-chai-enzyme
 
-[![Build Status](https://travis-ci.org/the-road-to-learn-react/react-testing-mocha-chai-enzyme.svg?branch=master)](https://travis-ci.org/rwieruch/react-components-test-setup) [![Coverage Status](https://coveralls.io/repos/github/the-road-to-learn-react/react-testing-mocha-chai-enzyme/badge.svg?branch=master)](https://coveralls.io/github/the-road-to-learn-react/react-testing-mocha-chai-enzyme?branch=master) [![Slack](https://slack-the-road-to-learn-react.wieruch.com/badge.svg)](https://slack-the-road-to-learn-react.wieruch.com/) [![Greenkeeper badge](https://badges.greenkeeper.io/the-road-to-learn-react/react-testing-mocha-chai-enzyme.svg)](https://greenkeeper.io/)
+[![Build Status](https://travis-ci.org/the-road-to-learn-react/react-testing-mocha-chai-enzyme.svg?branch=master)](https://travis-ci.org/the-road-to-learn-react/react-testing-mocha-chai-enzyme) [![Coverage Status](https://coveralls.io/repos/github/the-road-to-learn-react/react-testing-mocha-chai-enzyme/badge.svg?branch=master)](https://coveralls.io/github/the-road-to-learn-react/react-testing-mocha-chai-enzyme?branch=master) [![Slack](https://slack-the-road-to-learn-react.wieruch.com/badge.svg)](https://slack-the-road-to-learn-react.wieruch.com/) [![Greenkeeper badge](https://badges.greenkeeper.io/the-road-to-learn-react/react-testing-mocha-chai-enzyme.svg)](https://greenkeeper.io/)
 
 A test setup for React components with Mocha, Chai and Enzyme in a [React + Webpack](https://github.com/the-road-to-learn-react/minimal-react-webpack-babel-setup) application. [Read more about it.](https://www.robinwieruch.de/react-testing-mocha-chai-enzyme-sinon/)
 
